@@ -1,0 +1,221 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: source package arpwatch
+dpkg-buildpackage: source version 2.1a15-1
+dpkg-buildpackage: source changed by Alessio Garofalo <alessio.garofalo1@gmail.com>
+ dpkg-source --before-build arpwatch-2.1a15
+dpkg-buildpackage: host architecture i386
+ fakeroot debian/rules clean
+dh_testdir
+dh_testroot
+rm -f build-stamp configure-stamp
+/usr/bin/make clean
+make[1]: Entering directory `/home/user/Documents/arpwatch/arpwatch-2.1a15'
+make[1]: *** No rule to make target `clean'.  Stop.
+make[1]: Leaving directory `/home/user/Documents/arpwatch/arpwatch-2.1a15'
+make: [clean] Error 2 (ignored)
+dh_clean
+ dpkg-source -b arpwatch-2.1a15
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building arpwatch using existing ./arpwatch_2.1a15.orig.tar.gz
+dpkg-source: info: building arpwatch in arpwatch_2.1a15-1.debian.tar.gz
+dpkg-source: info: building arpwatch in arpwatch_2.1a15-1.dsc
+ debian/rules build
+dh_testdir
+./configure --prefix=/usr 
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking target system type... i686-pc-linux-gnu
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+checking how to run the C preprocessor... gcc -E
+checking for egrep... grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for memory.h... (cached) yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for bcopy... yes
+checking for strerror... yes
+checking whether byte ordering is bigendian... no
+checking return type of signal handlers... void
+checking for sigset... yes
+checking if union wait is used... no
+checking for res_query in -lresolv... yes
+checking for gethostbyname... yes
+checking for socket... yes
+checking for putmsg in -lstr... no
+checking for local pcap library... not found
+checking for pcap_open_live in -lpcap... yes
+checking for sendmail... /usr/sbin/sendmail
+checking for  using gcc... no
+checking if ether_header uses ether_addr structs... no
+checking if ether_arp uses ether_addr structs... no
+checking if ether_arp uses erp_xsha member... no
+checking for dn_skipname... no
+checking for a BSD-compatible install... /usr/bin/install -c
+configure: creating ./config.status
+config.status: creating Makefile
+creating empty arp.dat file
+touch configure-stamp
+dh_testdir
+/usr/bin/make
+make[1]: Entering directory `/home/user/Documents/arpwatch/arpwatch-2.1a15'
+gcc -O -DDEBUG -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_FCNTL_H=1 -DHAVE_MEMORY_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_BCOPY=1 -DHAVE_STRERROR=1 -DRETSIGTYPE=void -DRETSIGVAL= -DHAVE_SIGSET=1 -Dsignal=sigset -DDECLWAITSTATUS=int -DHAVE_LIBRESOLV=1  -DARPDIR=\"/usr/arpwatch\" -DPATH_SENDMAIL=\"/usr/sbin/sendmail\" -I.  -Ilinux-include -c ./arpwatch.c
+gcc -O -DDEBUG -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_FCNTL_H=1 -DHAVE_MEMORY_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_BCOPY=1 -DHAVE_STRERROR=1 -DRETSIGTYPE=void -DRETSIGVAL= -DHAVE_SIGSET=1 -Dsignal=sigset -DDECLWAITSTATUS=int -DHAVE_LIBRESOLV=1  -DARPDIR=\"/usr/arpwatch\" -DPATH_SENDMAIL=\"/usr/sbin/sendmail\" -I.  -Ilinux-include -c ./db.c
+gcc -O -DDEBUG -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_FCNTL_H=1 -DHAVE_MEMORY_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_BCOPY=1 -DHAVE_STRERROR=1 -DRETSIGTYPE=void -DRETSIGVAL= -DHAVE_SIGSET=1 -Dsignal=sigset -DDECLWAITSTATUS=int -DHAVE_LIBRESOLV=1  -DARPDIR=\"/usr/arpwatch\" -DPATH_SENDMAIL=\"/usr/sbin/sendmail\" -I.  -Ilinux-include -c ./dns.c
+gcc -O -DDEBUG -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_FCNTL_H=1 -DHAVE_MEMORY_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_BCOPY=1 -DHAVE_STRERROR=1 -DRETSIGTYPE=void -DRETSIGVAL= -DHAVE_SIGSET=1 -Dsignal=sigset -DDECLWAITSTATUS=int -DHAVE_LIBRESOLV=1  -DARPDIR=\"/usr/arpwatch\" -DPATH_SENDMAIL=\"/usr/sbin/sendmail\" -I.  -Ilinux-include -c ./ec.c
+gcc -O -DDEBUG -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_FCNTL_H=1 -DHAVE_MEMORY_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_BCOPY=1 -DHAVE_STRERROR=1 -DRETSIGTYPE=void -DRETSIGVAL= -DHAVE_SIGSET=1 -Dsignal=sigset -DDECLWAITSTATUS=int -DHAVE_LIBRESOLV=1  -DARPDIR=\"/usr/arpwatch\" -DPATH_SENDMAIL=\"/usr/sbin/sendmail\" -I.  -Ilinux-include -c ./file.c
+gcc -O -DDEBUG -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_FCNTL_H=1 -DHAVE_MEMORY_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_BCOPY=1 -DHAVE_STRERROR=1 -DRETSIGTYPE=void -DRETSIGVAL= -DHAVE_SIGSET=1 -Dsignal=sigset -DDECLWAITSTATUS=int -DHAVE_LIBRESOLV=1  -DARPDIR=\"/usr/arpwatch\" -DPATH_SENDMAIL=\"/usr/sbin/sendmail\" -I.  -Ilinux-include -c ./intoa.c
+gcc -O -DDEBUG -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_FCNTL_H=1 -DHAVE_MEMORY_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_BCOPY=1 -DHAVE_STRERROR=1 -DRETSIGTYPE=void -DRETSIGVAL= -DHAVE_SIGSET=1 -Dsignal=sigset -DDECLWAITSTATUS=int -DHAVE_LIBRESOLV=1  -DARPDIR=\"/usr/arpwatch\" -DPATH_SENDMAIL=\"/usr/sbin/sendmail\" -I.  -Ilinux-include -c ./machdep.c
+gcc -O -DDEBUG -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_FCNTL_H=1 -DHAVE_MEMORY_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_BCOPY=1 -DHAVE_STRERROR=1 -DRETSIGTYPE=void -DRETSIGVAL= -DHAVE_SIGSET=1 -Dsignal=sigset -DDECLWAITSTATUS=int -DHAVE_LIBRESOLV=1  -DARPDIR=\"/usr/arpwatch\" -DPATH_SENDMAIL=\"/usr/sbin/sendmail\" -I.  -Ilinux-include -c ./util.c
+gcc -O -DDEBUG -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_FCNTL_H=1 -DHAVE_MEMORY_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_BCOPY=1 -DHAVE_STRERROR=1 -DRETSIGTYPE=void -DRETSIGVAL= -DHAVE_SIGSET=1 -Dsignal=sigset -DDECLWAITSTATUS=int -DHAVE_LIBRESOLV=1  -DARPDIR=\"/usr/arpwatch\" -DPATH_SENDMAIL=\"/usr/sbin/sendmail\" -I.  -Ilinux-include -c ./report.c
+gcc -O -DDEBUG -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_FCNTL_H=1 -DHAVE_MEMORY_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_BCOPY=1 -DHAVE_STRERROR=1 -DRETSIGTYPE=void -DRETSIGVAL= -DHAVE_SIGSET=1 -Dsignal=sigset -DDECLWAITSTATUS=int -DHAVE_LIBRESOLV=1  -DARPDIR=\"/usr/arpwatch\" -DPATH_SENDMAIL=\"/usr/sbin/sendmail\" -I.  -Ilinux-include -c ./setsignal.c
+sed -e 's/.*/char version[] = "&";/' ./VERSION > version.c
+gcc -O -DDEBUG -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_FCNTL_H=1 -DHAVE_MEMORY_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_BCOPY=1 -DHAVE_STRERROR=1 -DRETSIGTYPE=void -DRETSIGVAL= -DHAVE_SIGSET=1 -Dsignal=sigset -DDECLWAITSTATUS=int -DHAVE_LIBRESOLV=1  -DARPDIR=\"/usr/arpwatch\" -DPATH_SENDMAIL=\"/usr/sbin/sendmail\" -I.  -Ilinux-include -c ./version.c
+gcc -O -DDEBUG -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_FCNTL_H=1 -DHAVE_MEMORY_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_BCOPY=1 -DHAVE_STRERROR=1 -DRETSIGTYPE=void -DRETSIGVAL= -DHAVE_SIGSET=1 -Dsignal=sigset -DDECLWAITSTATUS=int -DHAVE_LIBRESOLV=1  -DARPDIR=\"/usr/arpwatch\" -DPATH_SENDMAIL=\"/usr/sbin/sendmail\" -I.  -Ilinux-include -o arpwatch arpwatch.o db.o dns.o ec.o file.o intoa.o machdep.o util.o report.o setsignal.o version.o  -lresolv  -lpcap
+gcc -O -DDEBUG -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_FCNTL_H=1 -DHAVE_MEMORY_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_BCOPY=1 -DHAVE_STRERROR=1 -DRETSIGTYPE=void -DRETSIGVAL= -DHAVE_SIGSET=1 -Dsignal=sigset -DDECLWAITSTATUS=int -DHAVE_LIBRESOLV=1  -DARPDIR=\"/usr/arpwatch\" -DPATH_SENDMAIL=\"/usr/sbin/sendmail\" -I.  -Ilinux-include -c ./arpsnmp.c
+gcc -O -DDEBUG -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_FCNTL_H=1 -DHAVE_MEMORY_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_BCOPY=1 -DHAVE_STRERROR=1 -DRETSIGTYPE=void -DRETSIGVAL= -DHAVE_SIGSET=1 -Dsignal=sigset -DDECLWAITSTATUS=int -DHAVE_LIBRESOLV=1  -DARPDIR=\"/usr/arpwatch\" -DPATH_SENDMAIL=\"/usr/sbin/sendmail\" -I.  -Ilinux-include -o arpsnmp arpsnmp.o db.o dns.o ec.o file.o intoa.o machdep.o util.o report.o setsignal.o version.o  -lresolv 
+make[1]: Leaving directory `/home/user/Documents/arpwatch/arpwatch-2.1a15'
+touch build-stamp
+dh build
+   dh_testdir
+   dh_auto_configure
+checking build system type... i486-pc-linux-gnu
+checking host system type... i486-pc-linux-gnu
+checking target system type... i486-pc-linux-gnu
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+checking how to run the C preprocessor... gcc -E
+checking for egrep... grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for memory.h... (cached) yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for bcopy... yes
+checking for strerror... yes
+checking whether byte ordering is bigendian... no
+checking return type of signal handlers... void
+checking for sigset... yes
+checking if union wait is used... no
+checking for res_query in -lresolv... yes
+checking for gethostbyname... yes
+checking for socket... yes
+checking for putmsg in -lstr... no
+checking for local pcap library... not found
+checking for pcap_open_live in -lpcap... yes
+checking for sendmail... /usr/sbin/sendmail
+checking for  using gcc... no
+checking if ether_header uses ether_addr structs... no
+checking if ether_arp uses ether_addr structs... no
+checking if ether_arp uses erp_xsha member... no
+checking for dn_skipname... no
+checking for a BSD-compatible install... /usr/bin/install -c
+configure: creating ./config.status
+config.status: creating Makefile
+   dh_auto_build
+make[1]: Entering directory `/home/user/Documents/arpwatch/arpwatch-2.1a15'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/user/Documents/arpwatch/arpwatch-2.1a15'
+   dh_auto_test
+ fakeroot debian/rules binary
+dh build
+dh_testdir
+dh_testroot
+dh_clean -k
+dh_clean: dh_clean -k is deprecated; use dh_prep instead
+dh_installdirs
+/usr/bin/make install DESTDIR=/home/user/Documents/arpwatch/arpwatch-2.1a15/debian/arpwatch
+make[1]: Entering directory `/home/user/Documents/arpwatch/arpwatch-2.1a15'
+/usr/bin/install -c -m 555 -o bin -g bin arpwatch /home/user/Documents/arpwatch/arpwatch-2.1a15/debian/arpwatch/usr/sbin
+/usr/bin/install -c -m 555 -o bin -g bin arpsnmp /home/user/Documents/arpwatch/arpwatch-2.1a15/debian/arpwatch/usr/sbin
+make[1]: Leaving directory `/home/user/Documents/arpwatch/arpwatch-2.1a15'
+dh_testdir 
+dh_testroot 
+dh_installchangelogs 
+dh_installdocs 
+dh_installexamples	
+dh_installman
+dh_link
+dh_strip 
+dh_compress
+dh_fixperms 
+dh_python
+dh_python: This program is deprecated, you should use dh_python2 instead.
+dh_installdeb
+dh_gencontrol
+dpkg-gencontrol: warning: Depends field of package arpwatch: unknown substitution variable ${shlibs:Depends}
+dh_builddeb
+dpkg-deb: building package `arpwatch' in `../arpwatch_2.1a15-1_i386.deb'.
+dh_installdebconf
+dh_installexamples	
+dh_installchangelogs
+dh_fixperms
+dh binary
+   dh_makeshlibs
+   dh_shlibdeps
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/arpwatch/usr/sbin/arpwatch debian/arpwatch/usr/sbin/arpsnmp were not linked against libresolv.so.2 (they use none of the library's symbols)
+   dh_md5sums
+ dpkg-genchanges  >../arpwatch_2.1a15-1_i386.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build arpwatch-2.1a15
+dpkg-buildpackage: full upload (original source is included)
+Now running lintian...
+W: arpwatch source: dh_python-is-obsolete line 68
+W: arpwatch source: dh-clean-k-is-deprecated
+W: arpwatch source: maintainer-script-lacks-debhelper-token debian/postinst
+W: arpwatch source: maintainer-script-lacks-debhelper-token debian/postrm
+W: arpwatch source: maintainer-script-lacks-debhelper-token debian/preinst
+W: arpwatch source: maintainer-script-lacks-debhelper-token debian/prerm
+W: arpwatch source: debian-rules-ignores-make-clean-error line 33
+W: arpwatch: hardening-no-relro usr/sbin/arpsnmp
+W: arpwatch: hardening-no-fortify-functions usr/sbin/arpsnmp
+W: arpwatch: hardening-no-relro usr/sbin/arpwatch
+W: arpwatch: hardening-no-fortify-functions usr/sbin/arpwatch
+W: arpwatch: missing-depends-line
+W: arpwatch: wrong-bug-number-in-closes l3:#nnnn
+W: arpwatch: new-package-should-close-itp-bug
+E: arpwatch: helper-templates-in-copyright
+W: arpwatch: copyright-has-url-from-dh_make-boilerplate
+E: arpwatch: copyright-contains-dh_make-todo-boilerplate
+W: arpwatch: readme-debian-contains-debmake-template
+W: arpwatch: init.d-script-not-marked-as-conffile etc/init.d/arpwatch
+E: arpwatch: init.d-script-not-included-in-package etc/init.d/arpwatch
+W: arpwatch: binary-without-manpage usr/sbin/arpsnmp
+W: arpwatch: binary-without-manpage usr/sbin/arpwatch
+W: arpwatch: maintainer-script-needs-depends-on-adduser postinst
+Finished running lintian.

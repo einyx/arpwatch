@@ -1,0 +1,13 @@
+Package: arpwatch
+Version: 2.1a15-1
+Architecture: i386
+Maintainer: Alessio Garofalo <alessio.garofalo1@gmail.com>
+Installed-Size: 88
+Section: net
+Priority: extra
+Homepage: http://ee.lbl.gov
+Description: Ethernet/FDDI station activity monitor
+ Arpwatch maintains a database of Ethernet MAC addresses seen on the
+ network, with their associated IP pairs.  Alerts the system administrator
+ via e-mail if any change happens, such as new station/activity,
+ flip-flops, changed and re-used old addresses.

@@ -1,0 +1,16 @@
+Source: arpwatch
+Section: net 
+Priority: extra
+Maintainer: Alessio Garofalo <alessio.garofalo1@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev
+Standards-Version: 3.9.3
+Homepage: http://ee.lbl.gov 
+
+Package: arpwatch
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Ethernet/FDDI station activity monitor
+ Arpwatch maintains a database of Ethernet MAC addresses seen on the
+ network, with their associated IP pairs.  Alerts the system administrator
+ via e-mail if any change happens, such as new station/activity,
+ flip-flops, changed and re-used old addresses.

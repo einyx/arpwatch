@@ -1,0 +1,2 @@
+misc:Depends=
+shlibs:Depends=libc6 (>= 2.7), libpcap0.8 (>= 0.9.8)

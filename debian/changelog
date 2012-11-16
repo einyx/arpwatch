@@ -1,0 +1,5 @@
+arpwatch (2.1a15-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Alessio Garofalo <alessio.garofalo1@gmail.com>  Thu, 15 Nov 2012 01:32:31 +0100

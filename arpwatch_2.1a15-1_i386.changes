@@ -1,0 +1,53 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Thu, 15 Nov 2012 01:32:31 +0100
+Source: arpwatch
+Binary: arpwatch
+Architecture: source i386
+Version: 2.1a15-1
+Distribution: unstable
+Urgency: low
+Maintainer: Alessio Garofalo <alessio.garofalo1@gmail.com>
+Changed-By: Alessio Garofalo <alessio.garofalo1@gmail.com>
+Description: 
+ arpwatch   - Ethernet/FDDI station activity monitor
+Changes: 
+ arpwatch (2.1a15-1) unstable; urgency=low
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1: 
+ a40a2e9b54d0598b37ec52a0e120e016deea2ece 1766 arpwatch_2.1a15-1.dsc
+ 9dffaec0f132e5bb7aedfc840c5c67068bfbce69 202729 arpwatch_2.1a15.orig.tar.gz
+ db3e197f8b9d068eb2b8972f85c23e240e747b71 155645 arpwatch_2.1a15-1.debian.tar.gz
+ 73a4c750bf7f480efa0761fee83271c64a0b8d1f 23290 arpwatch_2.1a15-1_i386.deb
+Checksums-Sha256: 
+ 3254546954e255c50fb7cf17c5d66ee0cbfb2da650d013d40d614b850e924e37 1766 arpwatch_2.1a15-1.dsc
+ c1df9737e208a96a61fa92ddad83f4b4d9be66f8992f3c917e9edf4b05ff5898 202729 arpwatch_2.1a15.orig.tar.gz
+ 42ca73c04fc6576ffe3ffadcd80c76e3c68c4dd170ea4a65e4344aa32d83da9c 155645 arpwatch_2.1a15-1.debian.tar.gz
+ 473386fe60a12656a539ed62d3b938e3e1d9ca8cf2074af2dca2bc47d0c52a0b 23290 arpwatch_2.1a15-1_i386.deb
+Files: 
+ d7729593cc2ecaeb94090934d2851fcf 1766 net extra arpwatch_2.1a15-1.dsc
+ cebfeb99c4a7c2a6cee2564770415fe7 202729 net extra arpwatch_2.1a15.orig.tar.gz
+ 39cc4566f42e264a0477565b9b9a7142 155645 net extra arpwatch_2.1a15-1.debian.tar.gz
+ 0b25b0716612f7dd63a57d29d832c6f9 23290 net extra arpwatch_2.1a15-1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+Comment: GPGTools - http://gpgtools.org
+
+iQIcBAEBAgAGBQJQpnEfAAoJEKhI3Mg1GqepmyQP/j6TvgRk57iABS4elfG800/j
+RpDrr7jTP6zdpc7sw9Z1rcZ7oBeNRDG5UIzRUjoN4RExpuiWtdYUi4Hfoe80p3O9
+Ukp3et+S3XLgysuB92u3ioxBq2kbnMG8kT31SYiztDETY3Rs0hTYkgLqe8BVSlZE
+EDMDEhv7qvQ0EFaQVF9iosp9vMUCPqkopktuzDuJMoJ1Xv2Yw5kYCtNynm2MZRg1
+dxtWIjyf9Q5j5m0IWn96M4R1d5eQ9383snXM6Zn+Yh7GKvkRyjDvx3oYLFWysn+z
+7FiH0ldG7949goM/8SptJ0q9+e6B7ojEYVKQBmla4G4PwBjGeHroI0UoFTk0rkmP
+NUDDY5CaBJDA2r6sdYwaKesdiZHlHAOfiTm2fBgl35JrOQvEIbxSSK7fCvotH74X
+2wjRdcnXv5JPCESPrtCaiAjpHshoEaSxImCWZGBrl2frQeo3cYiYx4rJ9hbN7XkF
+S/l5aMB4cnFppEKX2AZAFOaRYLppn38EcdTEjcrKCspBsxS3I0TQR6/j55FDv/C5
+zie3JDn25A6WBc3vP2tMlclIhbA17ImjAY+QFc2PntJSDs6/otKQt7t3QvOkARvl
+7c+uMgmw3LiEZynT5T+pJ3/++34R7VbhHfihDb3rToZ35XUQ48XsxhL8YzBGkJPr
+w5Gx7+gPCmdJRYsxecbm
+=2Dry
+-----END PGP SIGNATURE-----
